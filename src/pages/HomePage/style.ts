@@ -15,7 +15,8 @@ export const WrapperTypeProduct = styled.div`
 
 export const WrapperProducts = styled.div`
     display: flex;
-    gap: 14px;
+    justify-content: center;
+    gap: 35px;
     margin-top:20px;
     flex-wrap: wrap;
 `

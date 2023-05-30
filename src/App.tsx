@@ -5,6 +5,9 @@ import ProductPage from "./pages/ProductPage/ProductPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import TypeProductPage from "./pages/TypeProductPage/TypeProductPage";
+import SignInPage from "./pages/SignInPage/SignInPage";
+import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: "order",
         element: <OrderPage />,
+      },
+      {
+        path: "sign-in",
+        element: <SignInPage />,
+      },
+      {
+        path: "sign-up",
+        element: <SignUpPage />,
+      },
+      {
+        path: "product-detail",
+        element: <ProductDetailPage />,
       },
     ],
   },
