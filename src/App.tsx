@@ -4,6 +4,7 @@ import Layout from "./Layout/Layout";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import TypeProductPage from "./pages/TypeProductPage/TypeProductPage";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "products",
         element: <ProductPage />,
+      },
+      {
+        path: "type",
+        element: <TypeProductPage />,
       },
       {
         path: "order",

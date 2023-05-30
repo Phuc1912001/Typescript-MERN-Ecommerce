@@ -1,5 +1,15 @@
 import { Col, Input } from "antd";
-import { WrapperHeader, WrapperTextHeader } from "./style";
+import {
+  WrapperHeader,
+  WrapperTextHeader,
+  WrapperHeaderAccout,
+  WrapperTextHeaderSmall,
+} from "./style";
+import {
+  UserOutlined,
+  CaretDownOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
 
 const { Search } = Input;
 
@@ -18,7 +28,29 @@ const HeaderComponent = () => {
             size="large"
           />
         </Col>
-        <Col span={6}>col6</Col>
+        <Col
+          span={6}
+          style={{
+            display: "flex",
+            gap: "20px",
+            alignItems: "center",
+          }}
+        >
+          <WrapperHeaderAccout>
+            <UserOutlined style={{ fontSize: "30px" }} />
+            <div>
+              <WrapperTextHeaderSmall>Đăng nhập/Đăng ký</WrapperTextHeaderSmall>
+              <div>
+                <WrapperTextHeaderSmall>Tài Khoản</WrapperTextHeaderSmall>
+                <CaretDownOutlined />
+              </div>
+            </div>
+          </WrapperHeaderAccout>
+          <div>
+            <ShoppingCartOutlined style={{ fontSize: "30px", color: "#fff" }} />
+            <WrapperTextHeaderSmall>giỏ hàng</WrapperTextHeaderSmall>
+          </div>
+        </Col>
       </WrapperHeader>
     </div>
   );
